@@ -277,7 +277,6 @@ index dcfe090c269d4cbcc2eb1b6f85392848bb34656c..377d08a19b659167ad0f38497d09cdca
  
 -                CompoundTag otherCompound = compounds[location];
 +            long SUPERBLOCK = -4323716122432332390L;
-+            byte VERSION = 1;
 +            int HEADER_SIZE = 32;
 +            int FOOTER_SIZE = 8;
  
@@ -385,7 +384,7 @@ index dcfe090c269d4cbcc2eb1b6f85392848bb34656c..377d08a19b659167ad0f38497d09cdca
 -                        oversizedCompressionTypes[location] = compression;
 -                    }
 -                }
-+            if (version != VERSION) {
++            if (version != 1 && version != 2) {
 +                System.out.println(file.toString());
 +                System.out.println("VERSION INVALID!");
 +                return;
