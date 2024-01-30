@@ -169,7 +169,7 @@ index dcfe090c269d4cbcc2eb1b6f85392848bb34656c..377d08a19b659167ad0f38497d09cdca
 -            if (compression == null) {
 -                return null;
 -            }
-+    final byte COMPRESSION_LEVEL = 1;
++    final byte COMPRESSION_LEVEL = 6;
  
 -            InputStream input = compression.wrap(new ByteArrayInputStream(chunkData.array(), chunkData.position(), chunkDataLength - chunkData.position()));
 -
